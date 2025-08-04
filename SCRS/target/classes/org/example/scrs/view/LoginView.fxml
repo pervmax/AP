@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.scrs.LoginController">
+    <children>
+        <VBox styleClass="login-container" alignment="CENTER" spacing="15">
+            <children>
+                <Label styleClass="login-title" text="Student Course Registration System" />
+                <Label text="Please sign in to continue" style="-fx-text-fill: #7f8c8d; -fx-font-size: 14px;" />
+
+                <VBox spacing="15" alignment="CENTER">
+                    <children>
+                        <TextField fx:id="usernameField" styleClass="login-field" promptText="Username" />
+                        <PasswordField fx:id="passwordField" styleClass="login-field" promptText="Password" />
+                        <Button fx:id="loginBtn" styleClass="login-button" text="Sign In" onAction="#handleLogin" />
+                        <Label fx:id="messageLabel" styleClass="error-label" />
+                    </children>
+                </VBox>
+
+                <VBox alignment="CENTER" spacing="5">
+                    <children>
+                        <Label text="Demo Credentials:" style="-fx-text-fill: #7f8c8d; -fx-font-size: 12px; -fx-font-weight: bold;" />
+                        <Label text="Username: student" style="-fx-text-fill: #7f8c8d; -fx-font-size: 11px;" />
+                        <Label text="Password: 1234" style="-fx-text-fill: #7f8c8d; -fx-font-size: 11px;" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.scrs.ViewCoursesController">
+    <children>
+        <VBox styleClass="form-container" alignment="CENTER" spacing="20">
+            <children>
+                <Label styleClass="form-title" text="📋 My Registered Courses" />
+                <Label text="Manage your enrolled courses below:" style="-fx-text-fill: #7f8c8d; -fx-font-size: 14px;" />
+
+                <VBox spacing="15" alignment="CENTER">
+                    <children>
+                        <TableView fx:id="coursesTable" styleClass="table-view" prefHeight="250" prefWidth="400">
+                            <columns>
+                                <TableColumn fx:id="courseNameColumn" text="Course Name" prefWidth="250" />
+                                <TableColumn fx:id="deleteColumn" text="Actions" prefWidth="150" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+                <Button styleClass="secondary-button" text="← Back to Dashboard" onAction="#goToDashboard" />
+            </children>
+        </VBox>
+    </children>
+</StackPane>

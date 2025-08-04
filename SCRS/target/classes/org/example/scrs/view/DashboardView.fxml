@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.scrs.DashboardController">
+    <children>
+        <VBox styleClass="dashboard-container" alignment="CENTER" spacing="20">
+            <children>
+                <Label fx:id="welcomeLabel" styleClass="welcome-label" />
+
+                <VBox spacing="15" alignment="CENTER">
+                    <children>
+                        <Button styleClass="dashboard-button" text="👤 Manage Profile" onAction="#goToProfile" />
+                        <Button styleClass="dashboard-button" text="📚 Register for Courses" onAction="#goToRegisterCourse" />
+                        <Button styleClass="dashboard-button" text="📋 View My Courses" onAction="#goToViewCourses" />
+                        <Button styleClass="dashboard-button" text="📊 Registration Statistics" onAction="#goToPieChart" />
+                    </children>
+                </VBox>
+
+                <Separator prefWidth="200" />
+
+                <Button styleClass="logout-button" text="🚪 Logout" onAction="#handleLogout" />
+            </children>
+        </VBox>
+    </children>
+</StackPane>

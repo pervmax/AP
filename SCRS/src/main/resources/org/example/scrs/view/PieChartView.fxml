@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.scrs.PieChartController">
+    <children>
+        <VBox styleClass="chart-container" alignment="CENTER" spacing="20">
+            <children>
+                <Label styleClass="chart-title" text="📊 Course Registration Statistics" />
+                <Label text="Visual representation of your course registration progress" style="-fx-text-fill: #7f8c8d; -fx-font-size: 14px;" />
+
+                <PieChart fx:id="pieChart" styleClass="pie-chart" prefHeight="300" prefWidth="400" />
+
+                <VBox spacing="10" alignment="CENTER">
+                    <children>
+                        <HBox spacing="20" alignment="CENTER">
+                            <children>
+                                <HBox spacing="5" alignment="CENTER">
+                                    <children>
+                                        <Label text="●" style="-fx-text-fill: #667eea; -fx-font-size: 16px;" />
+                                        <Label text="Registered Courses" style="-fx-font-size: 14px;" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="5" alignment="CENTER">
+                                    <children>
+                                        <Label text="●" style="-fx-text-fill: #e74c3c; -fx-font-size: 16px;" />
+                                        <Label text="Available Courses" style="-fx-font-size: 14px;" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <Button styleClass="secondary-button" text="← Back to Dashboard" onAction="#goToDashboard" />
+            </children>
+        </VBox>
+    </children>
+</StackPane>
